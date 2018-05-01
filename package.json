@@ -1,6 +1,6 @@
 {
   "name": "ecomapss-api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "src",
   "private": true,
   "scripts": {
@@ -30,7 +30,7 @@
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-standard": "^3.0.1",
     "jest-cli": "^20.0.4",
-    "mockgoose": "^6.0.8",
+    "mockgoose": "^7.3.5",
     "nock": "^9.0.2",
     "nodemon": "^1.10.2",
     "opn-cli": "^3.1.0",
