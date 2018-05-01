@@ -4,6 +4,8 @@ import auth from './auth'
 import passwordReset from './password-reset'
 import area from './area'
 import regiao from './regiao'
+import coordenada from './coordenada'
+import areaElemento from './area-elemento'
 
 const router = new Router()
 
@@ -35,5 +37,7 @@ router.use('/auth', auth)
 router.use('/password-resets', passwordReset)
 router.use('/areas', area)
 router.use('/regioes', regiao)
+router.use('/coordenadas', coordenada)
+router.use('/area-elementos', areaElemento)
 
 export default router
