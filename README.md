@@ -1,4 +1,6 @@
-# ecomapss-api
+# Ecomapss-api
+
+[![Heroku App Status](http://heroku-shields.herokuapp.com/ecomapss-api)](https://ecomapss-api.herokuapp.com/)
 
 ## Commands
 
