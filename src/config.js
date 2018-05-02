@@ -39,7 +39,7 @@ const config = {
   },
   test: {
     mongo: {
-      uri: 'mongodb://localhost/ecomapss-api-test',
+      uri: process.env.MONGODB_TEST_URI || 'mongodb://localhost/ecomapss-api-test',
       options: {
         debug: false
       }
@@ -47,7 +47,7 @@ const config = {
   },
   development: {
     mongo: {
-      uri: 'mongodb://localhost/ecomapss-api-dev',
+      uri: process.env.MONGODB_DEV_URI || 'mongodb://localhost/ecomapss-api-dev',
       options: {
         debug: true
       }
