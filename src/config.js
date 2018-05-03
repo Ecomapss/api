@@ -10,7 +10,7 @@ const requireProcessEnv = (name) => {
 }
 
 /* istanbul ignore next */
-if (process.env.NODE_ENV !== 'production' && process.env.HEROKU_ENV !== 'active') {
+if (process.env.NODE_ENV !== 'production' && !!process.env.HEROKU_ENV) {
   const dotenv = require('dotenv-safe')
   dotenv.load({
     allowEmptyValues: true,
