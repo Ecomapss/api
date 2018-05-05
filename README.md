@@ -2,6 +2,7 @@
 
 [![Heroku App Status](http://heroku-shields.herokuapp.com/ecomapss-api)](https://ecomapss-api.herokuapp.com/)
 [![Known Vulnerabilities](https://snyk.io/test/github/ecomapss/api/badge.svg)](https://snyk.io/test/github/ecomapss/api/badge.svg)
+[![CircleCI](https://circleci.com/gh/Ecomapss/api/tree/master.svg?style=svg)](https://circleci.com/gh/Ecomapss/api/tree/master)
 ## Commands
 
 After you generate your project, these commands are available in `package.json`.
