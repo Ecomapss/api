@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "node .",
-    "test": "jest",
+    "test": "cross-env NODE_ENV=test && jest",
     "coverage": "npm test -- --coverage",
     "postcoverage": "opn coverage/lcov-report/index.html",
     "dev": "nodemon -i \"*.test.js\" .",
@@ -23,6 +23,7 @@
     "apidoc-markdown": "^0.2.0",
     "babel-eslint": "^8.0.1",
     "babel-jest": "^20.0.3",
+    "colors": "^1.2.4",
     "cross-env": "^5.0.5",
     "dotenv-safe": "^4.0.3",
     "eslint": "^4.4.1",

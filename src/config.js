@@ -10,9 +10,10 @@ const requireProcessEnv = (name) => {
 }
 
 /* istanbul ignore next */
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production' && process.env.HEROKU_ENV !== 'active') {
   const dotenv = require('dotenv-safe')
   dotenv.load({
+    allowEmptyValues: true,
     path: path.join(__dirname, '../.env'),
     sample: path.join(__dirname, '../.env.example')
   })

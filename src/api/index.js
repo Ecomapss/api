@@ -37,5 +37,10 @@ router.use('/password-resets', passwordReset)
 router.use('/areas', area)
 router.use('/regioes', regiao)
 router.use('/area-elementos', areaElemento)
+router.get('/', home)
+
+function home(req, res) {
+  return res.status(200).send("ECOMAPS - API: ONLINE")
+}
 
 export default router

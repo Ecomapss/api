@@ -31,10 +31,10 @@ afterAll(() => {
 })
 
 afterEach(async () => {
-  const { collections } = mongoose.connection
+  const connection = mongoose.connection
   const promises = []
-  Object.keys(collections).forEach((collection) => {
-    promises.push(collections[collection].remove())
+  Object.keys(connection.collections).forEach((collection) => {
+    promises.push(connection.collections[collection].remove())
   })
   await Promise.all(promises)
 })
