@@ -5,11 +5,15 @@
   "private": true,
   "scripts": {
     "start": "node .",
+<<<<<<< Updated upstream
     "test": "cross-env NODE_ENV=test && jest",
+=======
+    "test": "NODE_ENV=test && jest",
+>>>>>>> Stashed changes
     "coverage": "npm test -- --coverage",
     "postcoverage": "opn coverage/lcov-report/index.html",
     "dev": "nodemon -i \"*.test.js\" .",
-    "prod": "cross-env NODE_ENV=production nodemon -i \"*.test.js\" -r dotenv-safe/config .",
+    "prod": "cross-env NODE_ENV=production nodemon -i \"*.test.js\" -r .",
     "lint": "eslint src",
     "docs": "apidoc -i src -o docs && apidoc-markdown -p docs -o DOCS.md",
     "postdocs": "opn docs/index.html"
