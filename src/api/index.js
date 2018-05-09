@@ -46,7 +46,7 @@ router.use('/historias', historia)
 router.get('/', home)
 
 function home(req, res) {
-  return res.status(200).send("ECOMAPS - API: ONLINE")
+  return res.status(200).send("ECOMAPSS - API: ONLINE")
 }
 
 export default router
