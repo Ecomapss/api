@@ -6,6 +6,8 @@ import area from './area'
 import regiao from './regiao'
 import areaElemento from './area-elemento'
 import fauna from './fauna'
+import elemento from './elemento'
+import historia from './historia'
 
 const router = new Router()
 
@@ -39,6 +41,8 @@ router.use('/areas', area)
 router.use('/regioes', regiao)
 router.use('/area-elementos', areaElemento)
 router.use('/faunas', fauna)
+router.use('/elementos', elemento)
+router.use('/historias', historia)
 router.get('/', home)
 
 function home(req, res) {
