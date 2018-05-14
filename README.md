@@ -1,7 +1,6 @@
 # Ecomapss-api
 
 [![Heroku App Status](https://heroku-badge.herokuapp.com/?app=ecomapss-api&style=flat)](https://ecomapss-api.herokuapp.com/)
-[![Known Vulnerabilities](https://snyk.io/test/github/ecomapss/api/badge.svg)](https://snyk.io/test/github/ecomapss/api/badge.svg)
 [![CircleCI](https://circleci.com/gh/Ecomapss/api/tree/master.svg?style=svg)](https://circleci.com/gh/Ecomapss/api/tree/master)
 ## Commands
 
