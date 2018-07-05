@@ -2,6 +2,7 @@
 import path from 'path'
 import enviroments from './enviroments'
 
+
 /* istanbul ignore next */
 const requireProcessEnv = (name) => {
   if (!process.env[name]) {
@@ -11,11 +12,7 @@ const requireProcessEnv = (name) => {
 }
 
 /* istanbul ignore next */
-<<<<<<< Updated upstream
-if (process.env.NODE_ENV !== 'production' && process.env.HEROKU_ENV !== 'active') {
-=======
 if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test') {
->>>>>>> Stashed changes
   const dotenv = require('dotenv-safe')
   dotenv.load({
     allowEmptyValues: true,
@@ -23,6 +20,9 @@ if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test') {
     sample: path.join(__dirname, '../.env.example')
   })
 }
+
+
+console.log(process.env.MASTER_KEY)
 
 const config = {
   all: {
@@ -42,8 +42,6 @@ const config = {
         }
       }
     }
-  },
-  test: 
   },
   development: {
     mongo: {

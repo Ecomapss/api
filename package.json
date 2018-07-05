@@ -5,11 +5,7 @@
   "private": true,
   "scripts": {
     "start": "node .",
-<<<<<<< Updated upstream
     "test": "cross-env NODE_ENV=test && jest",
-=======
-    "test": "NODE_ENV=test && jest",
->>>>>>> Stashed changes
     "coverage": "npm test -- --coverage",
     "postcoverage": "opn coverage/lcov-report/index.html",
     "dev": "nodemon -i \"*.test.js\" .",
