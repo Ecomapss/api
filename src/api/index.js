@@ -8,6 +8,7 @@ import areaElemento from './area-elemento'
 import fauna from './fauna'
 import elemento from './elemento'
 import historia from './historia'
+import mail from './mail'
 
 const router = new Router()
 
@@ -43,6 +44,7 @@ router.use('/area-elementos', areaElemento)
 router.use('/faunas', fauna)
 router.use('/elementos', elemento)
 router.use('/historias', historia)
+router.use('/mail', mail)
 router.get('/', home)
 
 function home(req, res) {
