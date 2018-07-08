@@ -1,6 +1,6 @@
-# ecomapss-api v0.0.0
+# Ecomapss-API v0.7.1
 
-
+Documetation of ecomapss api project
 
 - [Area](#area)
 	- [Create area](#create-area)
@@ -8,6 +8,13 @@
 	- [Retrieve area](#retrieve-area)
 	- [Retrieve areas](#retrieve-areas)
 	- [Update area](#update-area)
+	
+- [AreaElemento](#areaelemento)
+	- [Create area elemento](#create-area-elemento)
+	- [Delete area elemento](#delete-area-elemento)
+	- [Retrieve area elemento](#retrieve-area-elemento)
+	- [Retrieve area elementos](#retrieve-area-elementos)
+	- [Update area elemento](#update-area-elemento)
 	
 - [Auth](#auth)
 	- [Authenticate](#authenticate)
@@ -112,6 +119,82 @@
 | nome			| 			|  <p>Area's nome.</p>							|
 | categoria			| 			|  <p>Area's categoria.</p>							|
 | areacol			| 			|  <p>Area's areacol.</p>							|
+
+# AreaElemento
+
+## Create area elemento
+
+
+
+	POST /area-elementos
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+| id_area			| 			|  <p>Area elemento's id_area.</p>							|
+| id_elemento			| 			|  <p>Area elemento's id_elemento.</p>							|
+
+## Delete area elemento
+
+
+
+	DELETE /area-elementos/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+
+## Retrieve area elemento
+
+
+
+	GET /area-elementos/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>user access token.</p>							|
+
+## Retrieve area elementos
+
+
+
+	GET /area-elementos
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>user access token.</p>							|
+| q			| String			| **optional** <p>Query to search.</p>							|
+| page			| Number			| **optional** <p>Page number.</p>							|
+| limit			| Number			| **optional** <p>Amount of returned items.</p>							|
+| sort			| String[]			| **optional** <p>Order of returned items.</p>							|
+| fields			| String[]			| **optional** <p>Fields to be returned.</p>							|
+
+## Update area elemento
+
+
+
+	PUT /area-elementos/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+| id_area			| 			|  <p>Area elemento's id_area.</p>							|
+| id_elemento			| 			|  <p>Area elemento's id_elemento.</p>							|
 
 # Auth
 
