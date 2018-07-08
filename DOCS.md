@@ -1,6 +1,6 @@
-# ecomapss-api v0.0.1
+# Ecomapss-API v0.8.4
 
-
+Documetation of ecomapss api project
 
 - [Area](#area)
 	- [Create area](#create-area)
