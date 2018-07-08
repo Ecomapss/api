@@ -1,6 +1,6 @@
-# Ecomapss-API v0.8.4
+# Ecomapss-API v0.8.5
 
-Documetation of ecomapss api project
+Documentation of ecomapss api project
 
 - [Area](#area)
 	- [Create area](#create-area)
@@ -472,7 +472,8 @@ Documetation of ecomapss api project
 
 | Name    | Type      | Description                          |
 |---------|-----------|--------------------------------------|
-| access_token			| String			|  <p>master access token.</p>							|
+| email			| String			|  <p>Email address to receive the password reset token.</p>							|
+| data			| String			|  <p>Data which contains information what will be sent.</p>							|
 
 # PasswordReset
 
