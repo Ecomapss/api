@@ -14,3 +14,6 @@
 ### v0.8.4
 * Sync apidoc to actual version
 
+### v0.8.5
+* Api mail now can map array of objects, and location inside each object
+
