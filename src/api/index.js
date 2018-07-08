@@ -5,6 +5,10 @@ import passwordReset from './password-reset'
 import area from './area'
 import regiao from './regiao'
 import areaElemento from './area-elemento'
+import fauna from './fauna'
+import elemento from './elemento'
+import historia from './historia'
+import mail from './mail'
 
 const router = new Router()
 
@@ -37,10 +41,14 @@ router.use('/password-resets', passwordReset)
 router.use('/areas', area)
 router.use('/regioes', regiao)
 router.use('/area-elementos', areaElemento)
+router.use('/faunas', fauna)
+router.use('/elementos', elemento)
+router.use('/historias', historia)
+router.use('/mail', mail)
 router.get('/', home)
 
 function home(req, res) {
-  return res.status(200).send("ECOMAPS - API: ONLINE")
+  return res.status(200).send("ECOMAPSS - API: ONLINE")
 }
 
 export default router

@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 import path from 'path'
+import enviroments from './enviroments'
+
 
 /* istanbul ignore next */
 const requireProcessEnv = (name) => {
@@ -10,7 +12,7 @@ const requireProcessEnv = (name) => {
 }
 
 /* istanbul ignore next */
-if (process.env.NODE_ENV !== 'production' && process.env.HEROKU_ENV !== 'active') {
+if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test') {
   const dotenv = require('dotenv-safe')
   dotenv.load({
     allowEmptyValues: true,
@@ -18,6 +20,9 @@ if (process.env.NODE_ENV !== 'production' && process.env.HEROKU_ENV !== 'active'
     sample: path.join(__dirname, '../.env.example')
   })
 }
+
+
+console.log(process.env.MASTER_KEY)
 
 const config = {
   all: {
@@ -27,22 +32,14 @@ const config = {
     ip: process.env.IP || '0.0.0.0',
     apiRoot: process.env.API_ROOT || '',
     defaultEmail: 'no-reply@ecomapss-api.com',
-    sendgridKey: requireProcessEnv('SENDGRID_KEY'),
-    masterKey: requireProcessEnv('MASTER_KEY'),
-    jwtSecret: requireProcessEnv('JWT_SECRET'),
+    sendgridKey: process.env.SENDGRID_KEY,
+    masterKey: process.env.MASTER_KEY,
+    jwtSecret: process.env.JWT_SECRET,
     mongo: {
       options: {
         db: {
           safe: true
         }
-      }
-    }
-  },
-  test: {
-    mongo: {
-      uri: process.env.MONGODB_TEST_URI || 'mongodb://localhost/ecomapss-api-test',
-      options: {
-        debug: false
       }
     }
   },
