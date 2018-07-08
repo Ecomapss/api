@@ -10,3 +10,7 @@
 
 ### v0.8.3
 * added mail sender api
+
+### v0.8.4
+* Sync apidoc to actual version
+
