@@ -52,7 +52,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "jsonwebtoken": "^8.2.1",
-    "mongoose": "^4.12.4",
+    "mongoose": "^4.13.17",
     "mongoose-create-unique": "^0.4.4",
     "mongoose-keywords": "^0.3.2",
     "morgan": "^1.9.1",
