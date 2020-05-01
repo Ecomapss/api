@@ -12,7 +12,9 @@
     "prod": "cross-env NODE_ENV=production nodemon -i \"*.test.js\" -r .",
     "lint": "eslint src",
     "docs": "apidoc -i src -o docs && apidoc-markdown -p docs -o DOCS.md",
-    "postdocs": "opn docs/index.html"
+    "postdocs": "opn docs/index.html",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "jest": {
     "testEnvironment": "node",
@@ -64,6 +66,8 @@
     "rand-token": "^0.4.0",
     "request": "^2.85.0",
     "request-promise": "^4.2.2",
-    "sendgrid": "^4.10.0"
-  }
+    "sendgrid": "^4.10.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
